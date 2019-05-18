@@ -1,0 +1,7 @@
+E:\Github\Project-X180519\ImageMerger\ImageMerger\bin\Debug\ImageMerger.exe.config
+E:\Github\Project-X180519\ImageMerger\ImageMerger\bin\Debug\ImageMerger.exe
+E:\Github\Project-X180519\ImageMerger\ImageMerger\bin\Debug\ImageMerger.pdb
+E:\Github\Project-X180519\ImageMerger\ImageMerger\obj\Debug\ImageMerger.csprojAssemblyReference.cache
+E:\Github\Project-X180519\ImageMerger\ImageMerger\obj\Debug\ImageMerger.csproj.CoreCompileInputs.cache
+E:\Github\Project-X180519\ImageMerger\ImageMerger\obj\Debug\ImageMerger.exe
+E:\Github\Project-X180519\ImageMerger\ImageMerger\obj\Debug\ImageMerger.pdb
