@@ -13,7 +13,7 @@ namespace ImageMerger
                 for (int j = 0; j < img.Height; j++)
                 {
                     Color pixel = img.GetPixel(i, j);
-                    Console.WriteLine(pixel);
+                    // Do with pixel
                 }
             }
         }
