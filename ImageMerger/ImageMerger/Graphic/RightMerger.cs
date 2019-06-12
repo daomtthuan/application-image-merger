@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace ImageMerger.Graphic
 {
@@ -138,21 +137,20 @@ namespace ImageMerger.Graphic
         public void Merge()
         {
             Pixel[] mathedArea = GetMathedArea();
-            int Width = mathedArea[0].X + bitmap2.Width;
-            int Height = bitmap1.Height + bitmap2.Height - (Math.Abs(mathedArea[0].Y - mathedArea[1].Y) + 1);
-            Bitmap bitmap = new Bitmap(Width, Height);
-
+            Bitmap bitmap = new Bitmap(mathedArea[0].X + bitmap2.Width, mathedArea[2].Y + mathedArea[0].Y + (mathedArea[0].Y == 0 ? bitmap1.Height : bitmap2.Height));
 
             int x, y;
             for (x = 0; x < bitmap1.Width; x++)
+            {
                 for (y = 0; y < bitmap1.Height; y++)
                     bitmap.SetPixel(x, y + mathedArea[2].Y, bitmap1.GetPixel(x, y));
 
-            for (x = 0; x < bitmap2.Width; x++)
                 for (y = 0; y < bitmap2.Height; y++)
                     bitmap.SetPixel(x + mathedArea[0].X, y + mathedArea[0].Y, bitmap2.GetPixel(x, y));
+            }
 
             bitmap.Save(@"E:\Github\Project-X180519\ImageMerger\result.png");
+            System.Diagnostics.Process.Start(@"E:\Github\Project-X180519\ImageMerger\result.png");
         }
         #endregion  
     }
